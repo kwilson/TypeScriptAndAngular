@@ -6,10 +6,10 @@ module TypeScriptAndAngular.Controllers {
         listItems: ListItem[];
 
         newItemName: string;
+
         static $inject = [
             "$scope"
         ];
-
         constructor(isolateScope: Directives.IToDoListScope) {
             this.name = isolateScope.name;
             this.listItems = [];
