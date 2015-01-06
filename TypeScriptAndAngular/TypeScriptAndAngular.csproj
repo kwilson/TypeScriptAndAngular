@@ -70,7 +70,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default.html" />
+    <Content Include="default.htm" />
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
