@@ -6,8 +6,7 @@ module TypeScriptAndAngular.Controllers {
         listItems: ListItem[];
 
         newItemName: string;
-
-        public static $inject = [
+        static $inject = [
             "$scope"
         ];
 
