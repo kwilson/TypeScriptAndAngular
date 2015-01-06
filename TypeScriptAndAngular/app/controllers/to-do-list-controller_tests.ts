@@ -37,7 +37,7 @@ module TypeScriptAndAngular.Controllers.Tests {
                 expect(ctrl.listItems.length).toBe(0);
             });
 
-            it("Save does nothing if no task name is empty string", () => {
+            it("Save does nothing if task name is empty string", () => {
                 // Arrange
                 var ctrl = new Controllers.ToDoListController(listScopeMock);
                 ctrl.newItemName = "";
