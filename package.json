@@ -1,0 +1,12 @@
+{
+  "name": "TestRunner",
+  "version": "1.0.0",
+  "description": "Test runner for Karma unit tests.",
+  "devDependencies": {
+    "jasmine-core": "^2.1.3",
+    "karma": "^0.12.24",
+    "karma-jasmine": "^0.3.2",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sourcemap-loader": "^0.3.0"
+  }
+}

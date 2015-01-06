@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TypeScript and Angular</title>
+        <style>
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            div.toDoList {
+                border: 2px solid #666;
+                float: left;
+                padding: 1em;
+                margin: 1em;
+                width: 360px;
+            }
+
+                div.toDoList h2 {
+                    padding: 0;
+                    margin: 0 0 0.5em;
+                }
+
+                div.toDoList form {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                    div.toDoList form input {
+                        flex: 1;
+                        font-size: 1em;
+                    }
+
+                    div.toDoList form button {
+                        flex: none;
+                    }
+
+                div.toDoList input,
+                div.toDoList button {
+                    padding: 0.5em;
+                }
+
+                    div.toDoList p,
+                    div.toDoList ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    div.toDoList li {
+                        background: #d0f8a7;
+                        position: relative;
+                        padding: 0.5em;
+                        padding-left: 35px;
+                        margin-top: 0.5em;
+                    }
+
+                    div.toDoList li.complete {
+                        background: #efefef;
+                        color: #aaa;
+                    }
+
+                        div.toDoList li.complete p {
+                            text-decoration: line-through;
+                        }
+
+                    div.toDoList li label {
+                        cursor: pointer;
+                    }
+
+                    div.toDoList li input[type='checkbox'] {
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+
+        </style>
+    </head>
+    <body ng-app="tsAngularApp">
+        <h1>To-Do</h1>
+        <to-do-list name="My Test List"></to-do-list>
+        <to-do-list name="My Second Test List"></to-do-list>
+
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/jquery-2.1.3.min.js"></script>
+        <script src="app/controllers/to-do-list-controller.js"></script>
+        <script src="app/directives/to-do-list.js"></script>
+        <script src="app/interfaces/idate-services.js"></script>
+        <script src="app/models/list-item.js"></script>
+        <script src="app/services/date-services.js"></script>
+
+        <script src="app/main.js"></script>
+    </body>
+</html>
