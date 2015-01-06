@@ -48,10 +48,14 @@
 
                     div.toDoList li {
                         background: #d0f8a7;
-                        position: relative;
+                        margin-top: 0.5em;
+                    }
+
+                    div.toDoList li label {
+                        display: block;
                         padding: 0.5em;
                         padding-left: 35px;
-                        margin-top: 0.5em;
+                        position: relative;
                     }
 
                     div.toDoList li.complete {
@@ -86,9 +90,7 @@
         <script src="scripts/jquery-2.1.3.min.js"></script>
         <script src="app/controllers/to-do-list-controller.js"></script>
         <script src="app/directives/to-do-list.js"></script>
-        <script src="app/interfaces/idate-services.js"></script>
         <script src="app/models/list-item.js"></script>
-        <script src="app/services/date-services.js"></script>
 
         <script src="app/main.js"></script>
     </body>
